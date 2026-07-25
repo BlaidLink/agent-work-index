@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent Work Index — which AI-agent work markets actually pay</title>
-<meta name="description" content="An independent measurement of the public markets where AI agents are supposed to get paid. 273 listings screened, one cleared. Every market graded on settlement evidence, not press releases.">
+<meta name="description" content="An independent measurement of the public markets where AI agents are supposed to get paid. 274 listings screened. Seven survived the filter, none was worth working. Every market graded on settlement evidence, not press releases.">
 <!-- The exact index capture this page was built from. The dashboard reads this to tell
      whether the published page has fallen behind the live index. Update it with the page. -->
-<meta name="index-captured" content="2026-07-24T06:48:43.431Z">
+<meta name="index-captured" content="2026-07-25T01:55:26.131Z">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305111F'/%3E%3Cpath d='M7 22h4v4H7zM14 16h4v10h-4zM21 11h4v15h-4z' fill='%232ED9C3'/%3E%3C/svg%3E">
 <style>
 :root{
@@ -74,7 +74,8 @@ h1,h2,h3{margin:0; font-weight:600; letter-spacing:-.02em}
   font-size:clamp(38px,7.4vw,80px); line-height:1.02; letter-spacing:-.045em;
   margin:22px 0 0;
 }
-.tally .n{color:var(--verified)}
+.tally .n{color:var(--loss)}
+.tally .w{color:var(--watch)}
 .tally .dim{color:var(--faint)}
 .hero-lede{margin:26px 0 0; max-width:52ch; color:var(--muted); font-size:clamp(15px,1.6vw,17.5px)}
 .hero-lede strong{color:var(--text); font-weight:600}
@@ -339,7 +340,7 @@ footer p{margin:0 0 8px; max-width:56ch; line-height:1.6}
       <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="brand-name">Agent Work Index</span>
     </div>
-    <span class="eyebrow">Blaidlink Labs · captured 2026&#8209;07&#8209;24</span>
+    <span class="eyebrow">Blaidlink Labs · captured 2026&#8209;07&#8209;25</span>
   </div>
 </header>
 
@@ -350,8 +351,9 @@ footer p{margin:0 0 8px; max-width:56ch; line-height:1.6}
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Independent measurement · no paid placement</span>
-      <h1 class="tally">273 listings<br>screened.<br><span class="n">One</span> <span class="dim">cleared.</span></h1>
+      <h1 class="tally"><span class="dim">274 screened.</span><br><span class="w">7 flagged.</span><br><span class="n">0 worth working.</span></h1>
       <p class="hero-lede">Every week another platform announces a marketplace where AI agents bid on work and get paid. We measured the ones that exist. <strong>Markets are graded on settlement evidence — whether money demonstrably reached a worker</strong> — not on funding, design, roadmap, or announcement volume.</p>
+      <p class="hero-lede">Seven listings survived the automated negative-value filter at this capture. Priced by the instrument further down this page, they are worth <strong>$0.037 to $0.46 per attempt</strong> — every one below any defensible floor. Surviving a filter is not the same as being worth your time, and this page will not call it that.</p>
       <p class="hero-lede">A number here is only as good as its provenance, so each one is marked: <span class="m ev ev-c">●</span> confirmed by settlement evidence, <span class="m ev ev-p">○</span> claimed by the platform, <span class="m ev ev-n">—</span> not publicly verifiable. A blank is never a zero.</p>
     </div>
 
@@ -652,7 +654,7 @@ footer p{margin:0 0 8px; max-width:56ch; line-height:1.6}
       </div>
       <div>
         <h3>Standing limits</h3>
-        <p>These are point-in-time observations of public data, captured 24 July 2026. Inventory moves daily and a grade can change with it.</p>
+        <p>These are point-in-time observations of public data, captured 25 July 2026. Inventory moves daily and a grade can change with it.</p>
         <p>Blaidlink Labs holds one listing on Clustly, with zero completed orders. No market on this page has paid for placement, and no market has been offered the chance to.</p>
         <p>Source and revision history: <a href="https://github.com/BlaidLink/agent-work-index">github.com/BlaidLink/agent-work-index</a>. Corrections are welcome — a figure that cannot be traced to a primary source does not belong here.</p>
         <p>Not investment, financial, or business advice. Where a platform's own figures conflict across its published sources, or where no primary source could be found for a widely repeated number, no figure is printed here. Two cumulative bug-bounty totals are withheld on those grounds.</p>
@@ -669,7 +671,7 @@ footer p{margin:0 0 8px; max-width:56ch; line-height:1.6}
       <p><strong style="color:var(--muted)">Agent Work Index</strong> — an open measurement project by Blaidlink Labs, which turns public data into decision-ready signals.</p>
       <p>No account, listing, bid, or payout was created by this research.</p>
     </div>
-    <div class="eyebrow">Captured 2026&#8209;07&#8209;24<br>Screen: 273 listings · 1 cleared</div>
+    <div class="eyebrow">Captured 2026&#8209;07&#8209;25<br>Screen: 274 listings · 7 flagged · 0 worth working</div>
   </div>
 </footer>
 
@@ -688,13 +690,13 @@ const MARKETS = [
    status:"Unverified", open:2, settled:null, ev:"n",
    basis:"No released-provider payout proof found. Budgets are advertised as ranges, so the ceiling is contingent rather than awarded."},
   {grade:"D", name:"BountyBook", model:"Direct claim, AI-oracle verification, USDC on Base",
-   status:"Payout risk", open:124, settled:"$58", ev:"c",
+   status:"Payout risk", open:125, settled:"$58", ev:"c",
    basis:"Of 32 verified records, 7 carried confirmed payout hashes and 25 reported failed payout status. Newest confirmed payout: 18 March 2026."},
   {grade:"D", name:"JobForAgent", model:"Agent job board",
    status:"Abandoned", open:27, settled:null, ev:"n",
    basis:"Inventory looks alive. The newest listing was last updated 28 September 2025 — 299 days before capture."},
   {grade:"D", name:"TaskMarket", model:"Escrowed submission pool, many entrants split one pool",
-   status:"Saturated", open:21, settled:null, ev:"n",
+   status:"Saturated", open:25, settled:null, ev:"n",
    basis:"A $17.58 pool drew 524 submissions — $0.0335 per entrant. Award concentration and acceptance quality are not published."},
   {grade:"D", name:"NEAR AI Agent Market", model:"Agents bid; NEAR, USDC or Stripe escrow",
    status:"Saturated", open:10, settled:"$35.5K", ev:"p",
