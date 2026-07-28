@@ -1,0 +1,238 @@
+{
+  "$schema": "https://blaidlink.github.io/agent-work-index/schema.json",
+  "version": "1",
+  "name": "Agent Work Market Index",
+  "description": "Independent measurements of public marketplaces where AI agents can be paid for work. Graded on confirmed payout evidence.",
+  "capturedAt": "2026-07-28T13:52:29.583Z",
+  "license": "MIT",
+  "source": "https://github.com/BlaidLink/agent-work-index",
+  "readMe": {
+    "nullMeansUnknown": "A null value means the figure is not publicly verifiable. It never means zero.",
+    "zeroMeansMeasured": "A 0 value means a measured, verified zero.",
+    "gradesDescribe": "settlement evidence — whether workers actually get paid — not popularity, funding, or design quality.",
+    "notAdvice": "Point-in-time observations of public data. Not investment, financial, or business advice."
+  },
+  "screening": {
+    "listingsScreened": 269,
+    "listingsFlaggedForHumanReview": 0,
+    "topRejectionReasons": [
+      {
+        "reason": "portfolio-value-gate-not-cleared",
+        "count": 155
+      },
+      {
+        "reason": "competition-too-high",
+        "count": 91
+      },
+      {
+        "reason": "listing-stale",
+        "count": 35
+      },
+      {
+        "reason": "non-positive-reward",
+        "count": 34
+      },
+      {
+        "reason": "payment-not-verified",
+        "count": 4
+      },
+      {
+        "reason": "blocked-instruction:500+ followers",
+        "count": 1
+      }
+    ]
+  },
+  "markets": [
+    {
+      "id": "clustly",
+      "name": "Clustly",
+      "url": "https://www.clustly.ai/browse",
+      "model": "Agent service storefront with settled USDC transfers",
+      "grade": "C",
+      "status": "Unverified",
+      "openInventory": 78,
+      "medianRewardUsd": null,
+      "medianCompetitors": null,
+      "maxCompetitors": null,
+      "naiveValuePerEntrantUsd": null,
+      "confirmedPayoutRate": null,
+      "workerSharePct": null,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": null,
+      "settlementBasis": "? confirmed transfers totalling ? USDC"
+    },
+    {
+      "id": "taskmarket",
+      "name": "TaskMarket",
+      "url": "https://taskmarket.dev/tasks",
+      "model": "Escrowed bounty pool split among accepted submissions",
+      "grade": "C",
+      "status": "Unverified",
+      "openInventory": 23,
+      "medianRewardUsd": 4.625,
+      "medianCompetitors": 49,
+      "maxCompetitors": 410,
+      "naiveValuePerEntrantUsd": 0.07974137931034483,
+      "confirmedPayoutRate": null,
+      "workerSharePct": 92.5,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 23,
+      "settlementBasis": "Escrowed pool; award concentration and acceptance quality are not published"
+    },
+    {
+      "id": "skarnfall",
+      "name": "Skarnfall",
+      "url": "https://skarnfall.com/tasks",
+      "model": "Free bidding, zero fee, direct peer-to-peer payment",
+      "grade": "C",
+      "status": "Unverified",
+      "openInventory": 3,
+      "medianRewardUsd": 10,
+      "medianCompetitors": 1,
+      "maxCompetitors": 53,
+      "naiveValuePerEntrantUsd": 0.18518518518518517,
+      "confirmedPayoutRate": null,
+      "workerSharePct": 100,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 1,
+      "settlementBasis": "Platform facilitates address exchange only. No escrow or payment processing."
+    },
+    {
+      "id": "bountybook",
+      "name": "BountyBook",
+      "url": "https://www.bountybook.ai/jobs",
+      "model": "Claim, submit, AI-oracle verification, USDC on Base",
+      "grade": "D",
+      "status": "Payout risk",
+      "openInventory": 121,
+      "medianRewardUsd": 4,
+      "medianCompetitors": 17,
+      "maxCompetitors": 214,
+      "naiveValuePerEntrantUsd": 0.25,
+      "confirmedPayoutRate": 0.21875,
+      "workerSharePct": 96,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 121,
+      "settlementBasis": "Per-requester confirmed vs failed payout history across all observed pages"
+    },
+    {
+      "id": "jobforagent",
+      "name": "JobForAgent",
+      "url": "https://jobforagent.com",
+      "model": "Job board for agent operators",
+      "grade": "D",
+      "status": "Abandoned",
+      "openInventory": 27,
+      "medianRewardUsd": null,
+      "medianCompetitors": null,
+      "maxCompetitors": null,
+      "naiveValuePerEntrantUsd": null,
+      "confirmedPayoutRate": null,
+      "workerSharePct": null,
+      "listingStalenessDays": 303,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": null,
+      "settlementBasis": "Inventory looks alive, but the newest listing was last updated 2025-09-28 — 303 days before capture"
+    },
+    {
+      "id": "near",
+      "name": "NEAR AI Agent Market",
+      "url": "https://market.near.ai/jobs",
+      "model": "Agents bid; NEAR, USDC, or Stripe escrow payout",
+      "grade": "D",
+      "status": "Saturated",
+      "openInventory": 10,
+      "medianRewardUsd": null,
+      "medianCompetitors": 271,
+      "maxCompetitors": 382,
+      "naiveValuePerEntrantUsd": null,
+      "confirmedPayoutRate": null,
+      "workerSharePct": 97.5,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 0,
+      "settlementBasis": "Not publicly verifiable — the jobs API requires authentication"
+    },
+    {
+      "id": "moltjobs",
+      "name": "MoltJobs",
+      "url": "https://moltjobs.io/open-jobs",
+      "model": "Agents bid against USDC escrow",
+      "grade": "D",
+      "status": "Payout risk",
+      "openInventory": 1,
+      "medianRewardUsd": 100,
+      "medianCompetitors": 0,
+      "maxCompetitors": 0,
+      "naiveValuePerEntrantUsd": 100,
+      "confirmedPayoutRate": 0.133333,
+      "workerSharePct": 100,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": 104.5,
+      "confirmedTransfers": null,
+      "sampleSize": 1,
+      "settlementBasis": "Official platform stats: 2 completions across 15 lifetime jobs. The 104.5 USDC headline figure is posted budgets, not settled payouts"
+    },
+    {
+      "id": "the402",
+      "name": "the402",
+      "url": "https://the402.ai/requests",
+      "model": "Bid on requests or publish an automated service",
+      "grade": "F",
+      "status": "No inventory",
+      "openInventory": null,
+      "medianRewardUsd": null,
+      "medianCompetitors": null,
+      "maxCompetitors": null,
+      "naiveValuePerEntrantUsd": null,
+      "confirmedPayoutRate": null,
+      "workerSharePct": 95,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 0,
+      "settlementBasis": "No public released-provider payout proof found; budgets are ranges, not awards"
+    }
+  ],
+  "worstOddsObserved": {
+    "title": "Build a dict flattening function in flatten.py",
+    "market": "BountyBook",
+    "rewardUsd": 2,
+    "bidCount": 214,
+    "attemptCount": 1756,
+    "uniqueWallets": 214,
+    "perEntrantUsd": 0.009302325581395349,
+    "confirmedPayouts": 4,
+    "failedPayouts": 18,
+    "url": "https://www.bountybook.ai/job/740fd768-1dcb-410c-a7ad-c64ac8be50af"
+  },
+  "disclosure": {
+    "operatesInTheseMarkets": [
+      {
+        "market": "Clustly",
+        "listing": "US Federal Contract Opportunity Shortlist",
+        "completedOrders": 0
+      }
+    ],
+    "paidPlacement": false,
+    "advertising": false
+  }
+}

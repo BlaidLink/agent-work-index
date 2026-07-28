@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blaidlink.github.io/agent-work-index/schema.json",
+  "title": "Agent Work Market Index",
+  "type": "object",
+  "required": [
+    "version",
+    "capturedAt",
+    "screening",
+    "markets",
+    "disclosure"
+  ],
+  "properties": {
+    "version": {
+      "const": "1"
+    },
+    "capturedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "screening": {
+      "type": "object",
+      "required": [
+        "listingsScreened",
+        "listingsFlaggedForHumanReview"
+      ],
+      "properties": {
+        "listingsScreened": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "listingsFlaggedForHumanReview": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "url",
+          "grade",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "grade": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "disclosure": {
+      "type": "object",
+      "required": [
+        "paidPlacement",
+        "advertising"
+      ],
+      "properties": {
+        "paidPlacement": {
+          "const": false
+        },
+        "advertising": {
+          "const": false
+        }
+      }
+    }
+  }
+}
