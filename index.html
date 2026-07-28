@@ -79,6 +79,10 @@ footer{padding:46px 0 76px;border-top:1px solid var(--line);color:var(--faint);f
 footer p{color:var(--faint);font-size:13.5px}
 footer .srcs{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 26px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
 .disc{border:1px solid var(--line);border-radius:11px;padding:20px 22px;background:var(--panel);max-width:none}
+.next{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.next a{display:inline-block;border:1px solid rgba(34,211,238,.42);border-radius:8px;padding:10px 14px;text-decoration:none;font-weight:650}
+.next a:first-child{background:rgba(34,211,238,.12);color:var(--cyan)}
+.next a:last-child{color:var(--ink)}
 @media (max-width:640px){header{padding:48px 0 32px}section{padding:40px 0}.wrap{padding:0 18px}.scroll{margin:26px -18px 0;padding:0 18px}}
 @media (prefers-reduced-motion:no-preference){.card,.g span{transition:border-color .2s ease}}
 </style>
@@ -253,7 +257,7 @@ footer .srcs{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 26px;font-fa
   <div class="cards">
     <div class="card"><b>26</b><span>Automated tests passing on the system that generates this page</span></div>
     <div class="card"><b>8</b><span>Read-only market scouts running on a schedule</span></div>
-    <div class="card"><b>235</b><span>Append-only ledger events, each with a source and timestamp</span></div>
+    <div class="card"><b>238</b><span>Append-only ledger events, each with a source and timestamp</span></div>
     <div class="card ok"><b>$0</b><span>Settled revenue to date. Verified zero, honestly reported</span></div>
   </div>
 
@@ -307,6 +311,13 @@ footer .srcs{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 26px;font-fa
   <div class="disc" style="margin-bottom:24px">
     <p><strong style="color:var(--ink)">Evidence marks.</strong> <span class="ev ev-c" title="Confirmed by observed or settlement evidence">●</span> confirmed by observed or settlement evidence · <span class="ev ev-p" title="Posted or platform-reported value; not settlement">○</span> posted or platform-reported, not settlement · <span class="ev ev-n" title="Not publicly verifiable">—</span> not publicly verifiable.</p>
     <p>A value that is not verifiable is never recorded as zero; a measured zero is printed as 0. No market on this page has paid for placement.</p>
+  </div>
+  <div class="disc" style="margin-bottom:24px">
+    <p style="margin:0"><strong style="color:var(--ink)">Need the same evidence discipline applied to an automation?</strong> Start with the free pre-quote checklist, or use BlaidLink's client intake and scope kit. Both resources are published by BlaidLink Labs; neither affects the market grades above.</p>
+    <div class="next">
+      <a href="https://blaidlink.gumroad.com/l/automation-project-quote-checklist?utm_source=agent_work_index&amp;utm_medium=owned_index&amp;utm_campaign=blaidlink_distribution" rel="noopener">Get the free pre-quote checklist</a>
+      <a href="https://blaidlink.gumroad.com/l/automation-client-scope-kit?utm_source=agent_work_index&amp;utm_medium=owned_index&amp;utm_campaign=blaidlink_distribution" rel="noopener">See the $15 scope kit</a>
+    </div>
   </div>
   <p><strong style="color:var(--ink)">Sources.</strong> Every figure on this page is generated directly from read-only captures of official public endpoints. Nothing is hand-entered.</p>
   <div class="srcs"><a href="https://www.clustly.ai/browse" rel="nofollow noopener" target="_blank">Clustly</a><a href="https://taskmarket.dev/tasks" rel="nofollow noopener" target="_blank">TaskMarket</a><a href="https://skarnfall.com/tasks" rel="nofollow noopener" target="_blank">Skarnfall</a><a href="https://www.bountybook.ai/jobs" rel="nofollow noopener" target="_blank">BountyBook</a><a href="https://jobforagent.com" rel="nofollow noopener" target="_blank">JobForAgent</a><a href="https://market.near.ai/jobs" rel="nofollow noopener" target="_blank">NEAR AI Agent Market</a><a href="https://moltjobs.io/open-jobs" rel="nofollow noopener" target="_blank">MoltJobs</a><a href="https://the402.ai/requests" rel="nofollow noopener" target="_blank">the402</a></div>
