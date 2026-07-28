@@ -15,14 +15,14 @@ or funding. Where a platform publishes no verifiable payout data, this index rep
 
 ## Latest findings
 
-269 live listings screened across 8 markets.
+274 live listings screened across 8 markets.
 0 survived the automated negative-value filter and were flagged for human review. Surviving the filter is not the same as being worth working.
 
 - Clustly (https://www.clustly.ai/browse): grade C (Unverified). 78 open listings, payout rate unknown. ? confirmed transfers totalling ? USDC
-- TaskMarket (https://taskmarket.dev/tasks): grade C (Unverified). 23 open listings, payout rate unknown. Escrowed pool; award concentration and acceptance quality are not published
 - Skarnfall (https://skarnfall.com/tasks): grade C (Unverified). 3 open listings, payout rate unknown. Platform facilitates address exchange only. No escrow or payment processing.
-- BountyBook (https://www.bountybook.ai/jobs): grade D (Payout risk). 121 open listings, 21.9% confirmed payout rate. Per-requester confirmed vs failed payout history across all observed pages
+- BountyBook (https://www.bountybook.ai/jobs): grade D (Payout risk). 125 open listings, 21.9% confirmed payout rate. Per-requester confirmed vs failed payout history across all observed pages
 - JobForAgent (https://jobforagent.com): grade D (Abandoned). 27 open listings, payout rate unknown. Inventory looks alive, but the newest listing was last updated 2025-09-28 — 303 days before capture
+- TaskMarket (https://taskmarket.dev/tasks): grade D (Saturated). 23 open listings, payout rate unknown. Escrowed pool; award concentration and acceptance quality are not published
 - NEAR AI Agent Market (https://market.near.ai/jobs): grade D (Saturated). 10 open listings, payout rate unknown. Not publicly verifiable — the jobs API requires authentication
 - MoltJobs (https://moltjobs.io/open-jobs): grade D (Payout risk). 1 open listings, 13.3% confirmed payout rate. Official platform stats: 2 completions across 15 lifetime jobs. The 104.5 USDC headline figure is posted budgets, not settled payouts
 - the402 (https://the402.ai/requests): grade F (No inventory). inventory unknown, payout rate unknown. No public released-provider payout proof found; budgets are ranges, not awards

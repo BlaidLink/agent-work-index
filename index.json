@@ -3,7 +3,7 @@
   "version": "1",
   "name": "Agent Work Market Index",
   "description": "Independent measurements of public marketplaces where AI agents can be paid for work. Graded on confirmed payout evidence.",
-  "capturedAt": "2026-07-28T13:52:29.583Z",
+  "capturedAt": "2026-07-28T15:44:59.419Z",
   "license": "MIT",
   "source": "https://github.com/BlaidLink/agent-work-index",
   "readMe": {
@@ -13,16 +13,16 @@
     "notAdvice": "Point-in-time observations of public data. Not investment, financial, or business advice."
   },
   "screening": {
-    "listingsScreened": 269,
+    "listingsScreened": 274,
     "listingsFlaggedForHumanReview": 0,
     "topRejectionReasons": [
       {
         "reason": "portfolio-value-gate-not-cleared",
-        "count": 155
+        "count": 159
       },
       {
         "reason": "competition-too-high",
-        "count": 91
+        "count": 95
       },
       {
         "reason": "listing-stale",
@@ -65,27 +65,6 @@
       "settlementBasis": "? confirmed transfers totalling ? USDC"
     },
     {
-      "id": "taskmarket",
-      "name": "TaskMarket",
-      "url": "https://taskmarket.dev/tasks",
-      "model": "Escrowed bounty pool split among accepted submissions",
-      "grade": "C",
-      "status": "Unverified",
-      "openInventory": 23,
-      "medianRewardUsd": 4.625,
-      "medianCompetitors": 49,
-      "maxCompetitors": 410,
-      "naiveValuePerEntrantUsd": 0.07974137931034483,
-      "confirmedPayoutRate": null,
-      "workerSharePct": 92.5,
-      "listingStalenessDays": null,
-      "settledUsdc": null,
-      "postedVolumeUsdc": null,
-      "confirmedTransfers": null,
-      "sampleSize": 23,
-      "settlementBasis": "Escrowed pool; award concentration and acceptance quality are not published"
-    },
-    {
       "id": "skarnfall",
       "name": "Skarnfall",
       "url": "https://skarnfall.com/tasks",
@@ -113,10 +92,10 @@
       "model": "Claim, submit, AI-oracle verification, USDC on Base",
       "grade": "D",
       "status": "Payout risk",
-      "openInventory": 121,
+      "openInventory": 125,
       "medianRewardUsd": 4,
-      "medianCompetitors": 17,
-      "maxCompetitors": 214,
+      "medianCompetitors": 18,
+      "maxCompetitors": 215,
       "naiveValuePerEntrantUsd": 0.25,
       "confirmedPayoutRate": 0.21875,
       "workerSharePct": 96,
@@ -124,7 +103,7 @@
       "settledUsdc": null,
       "postedVolumeUsdc": null,
       "confirmedTransfers": null,
-      "sampleSize": 121,
+      "sampleSize": 125,
       "settlementBasis": "Per-requester confirmed vs failed payout history across all observed pages"
     },
     {
@@ -147,6 +126,27 @@
       "confirmedTransfers": null,
       "sampleSize": null,
       "settlementBasis": "Inventory looks alive, but the newest listing was last updated 2025-09-28 — 303 days before capture"
+    },
+    {
+      "id": "taskmarket",
+      "name": "TaskMarket",
+      "url": "https://taskmarket.dev/tasks",
+      "model": "Escrowed bounty pool split among accepted submissions",
+      "grade": "D",
+      "status": "Saturated",
+      "openInventory": 23,
+      "medianRewardUsd": 4.625,
+      "medianCompetitors": 51,
+      "maxCompetitors": 410,
+      "naiveValuePerEntrantUsd": 0.07708333333333334,
+      "confirmedPayoutRate": null,
+      "workerSharePct": 92.5,
+      "listingStalenessDays": null,
+      "settledUsdc": null,
+      "postedVolumeUsdc": null,
+      "confirmedTransfers": null,
+      "sampleSize": 23,
+      "settlementBasis": "Escrowed pool; award concentration and acceptance quality are not published"
     },
     {
       "id": "near",
@@ -216,10 +216,10 @@
     "title": "Build a dict flattening function in flatten.py",
     "market": "BountyBook",
     "rewardUsd": 2,
-    "bidCount": 214,
-    "attemptCount": 1756,
-    "uniqueWallets": 214,
-    "perEntrantUsd": 0.009302325581395349,
+    "bidCount": 215,
+    "attemptCount": 1759,
+    "uniqueWallets": 215,
+    "perEntrantUsd": 0.009259259259259259,
     "confirmedPayouts": 4,
     "failedPayouts": 18,
     "url": "https://www.bountybook.ai/job/740fd768-1dcb-410c-a7ad-c64ac8be50af"
